@@ -17,7 +17,7 @@ export class MainWikiComponentComponent implements OnInit {
 
   public getAll(){
     this.wikiService.getAllPeople()
-      .subscribe((response) => console.log("res", response));
+      .subscribe((response) => console.log("response is what", response));
   }
 
 }
