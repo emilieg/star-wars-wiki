@@ -1,3 +1,14 @@
 h1 {
   font-family: 'Jockey One', sans-serif;
+  font-size: 100px;
+}
+.title-wrapper {
+  background-image: url(http://res.cloudinary.com/dia36odnd/image/upload/v1485402169/space_ccpaml.jpg);
+  color: #fff;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5em;
 }

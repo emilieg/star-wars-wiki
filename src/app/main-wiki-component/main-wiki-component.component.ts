@@ -71,29 +71,47 @@ export class MainWikiComponentComponent implements OnInit {
   }
 
   public getNextPage() {
+  
     this.wikiService.getAnotherPage(this.next)
+  
       .subscribe((response) => this.assignPeople(response));
+  
   }
 
   public getPreviousPage() {
+  
     this.wikiService.getAnotherPage(this.previous)
+  
       .subscribe((response) => this.assignPeople(response));
+  
   }
 
   private checkForNextPage(response):void{
+  
     if(response.next){
+  
       this.next = response.next;
+  
     } else {
+  
       this.next = '';
+  
     }
+  
   }
 
   private checkForPreviousPage(response):void{
+  
     if(response.previous){
+  
       this.previous = response.previous;
+  
     } else {
+  
       this.previous = '';
+  
     }
+  
   }
 
 }

@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+/* global styles */
+@import url('https://fonts.googleapis.com/css?family=Bungee|Bungee+Inline|Jockey+One|Russo+One|Roboto');
+/*
+font-family: 'Bungee', cursive;
+font-family: 'Russo One', sans-serif;
+font-family: 'Jockey One', sans-serif;
+font-family: 'Bungee Inline', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
