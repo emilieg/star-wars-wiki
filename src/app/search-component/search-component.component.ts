@@ -1,26 +1,34 @@
 import { Component, OnInit } from '@angular/core';
 import { WikiService } from '../wiki-service.service';
+import { SharedService } from '../shared-service.service';
 
 @Component({
   selector: 'search-component',
   templateUrl: './search-component.component.html',
   styleUrls: ['./search-component.component.css']
 })
-export class SearchComponentComponent implements OnInit {
+export class SearchComponent implements OnInit {
 
   constructor(
-    private wikiService:WikiService) { }
+    private wikiService:WikiService,
+    private sharedService: SharedService) { }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 
   public search(person:string){
+  
     this.wikiService.searchForPerson(person)
-      .subscribe((response) => this.receiveSearchResults());
+  
+      .subscribe((response) => this.receiveSearchResults(response));
+  
   }
 
   private receiveSearchResults(response){
-    console.log("response", response);
+    console.log("response is", response);
+  
+      this.sharedService.sendSearchResults(response)
+  
   }
+
+
 }

@@ -1,7 +1,12 @@
 <h1> The people of Star Wars </h1>
 
+<button (click)="getAll()">Get all</button>
+
 <div *ngFor="let person of people">
   <div> {{person.name}} </div>
 </div>
 
-<button *ngIf="next" (click)="nextPage()">Next</button>
+<button *ngIf="next" (click)="getNextPage()">Next</button>
+Next: {{next}}
+<button *ngIf="previous" (click)="getPreviousPage()">Previous</button>
+Previous: {{previous}}

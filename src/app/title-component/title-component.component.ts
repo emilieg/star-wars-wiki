@@ -9,7 +9,7 @@ export class TitleComponentComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
+  public title:string = 'Star Wars Wiki';
 }

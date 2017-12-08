@@ -27,4 +27,10 @@ export class WikiService {
   
   }
 
+  public getAnotherPage(pageUrl:string): Observable<any> {
+
+    return this.http.get(pageUrl);
+
+  }
+
 }

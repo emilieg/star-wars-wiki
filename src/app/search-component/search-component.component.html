@@ -1,5 +1,7 @@
-<p>
-  search-component works!
-</p>
-<input>
-<button (click)="search('Luke')">Search</button>
+  <input #searchTerm
+  (keyup.enter)="search(searchTerm.value); searchTerm.value=''"
+  type="text">
+  
+  <button (click)="search(searchTerm.value); searchTerm.value=''">Search</button>
+
+  <p *ngIf="noResults">Sorry, there were no results for that search.</p>
