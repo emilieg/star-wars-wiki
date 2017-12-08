@@ -16,7 +16,15 @@ export class WikiService {
   private searchPeopleUrl:string = 'https://swapi.co/api/people/?search=';
 
   public getAllPeople(): Observable<any> {
+  
     return this.http.get(this.getPeopleUrl);
+  
+  }
+
+  public searchForPerson(person:string): Observable<any> {
+
+    return this.http.get(`${this.searchPeopleUrl}${person}`);
+  
   }
 
 }

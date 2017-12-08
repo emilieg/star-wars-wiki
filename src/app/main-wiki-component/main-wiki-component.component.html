@@ -1,5 +1,7 @@
-<p>
-  main-wiki-component works!
-</p>
+<h1> The people of Star Wars </h1>
 
-<button (click)="getAll()">Get Charecters!</button>
+<div *ngFor="let person of people">
+  <div> {{person.name}} </div>
+</div>
+
+<button *ngIf="next" (click)="nextPage()">Next</button>
