@@ -5,4 +5,16 @@
   align-items: center;
   font-family: 'Roboto', sans-serif;
 }
+app-title-component {
+  width: 100%;
+}
+
+search-component {
+  margin-top: -50px;
+  height: 100px;
+  width: 100vw;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
 

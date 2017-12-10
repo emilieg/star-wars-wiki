@@ -1,13 +1,22 @@
-<h1> The people of Star Wars </h1>
+<section>
+  <p>Use this wiki to search and learn more about characters from star wars.</p>
+  <button (click)="getAll()">Get all</button>
+  <p *ngIf="noResults">Sorry, there were no results for that search.</p>
+</section>
 
-<button (click)="getAll()">Get all</button>
-
-<div *ngFor="let person of people">
-  <div> {{person.name}} </div>
-</div>
-
-<button *ngIf="next" (click)="getNextPage()">Next</button>
-
-<button *ngIf="previous" (click)="getPreviousPage()">Previous</button>
-
-<p *ngIf="noResults">Sorry, there were no results for that search.</p>
+<section>
+    <div *ngFor="let person of people" class="info-container">
+        <div class="person-info"> 
+          <p><b>Name:</b> {{person.name}}</p>
+          <p><b>Height:</b> {{person.height}}</p>
+          <p><b>Mass:</b> {{person.mass}}</p>
+          <p><b>Skin Color:</b> {{person.skin_color}}</p>
+          <p><b>Hair Color:</b> {{person.hair_color}}</p>
+          <button><a href={{person.a}}>More</a></button>
+        </div>
+    </div>
+</section>
+<section>
+  <button *ngIf="next" (click)="getNextPage()">Next</button>
+  <button *ngIf="previous" (click)="getPreviousPage()">Previous</button>
+</section>

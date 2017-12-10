@@ -7,8 +7,35 @@ font-family: 'Jockey One', sans-serif;
 font-family: 'Bungee Inline', cursive;
 font-family: 'Roboto', sans-serif;
 */
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: 'Roboto', sans-serif;
   padding: 0;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
+  /*this will mostly only work on Mac OS X*/
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+}
+button {
+  font-size: 1em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: unset;
+  color: #fff;
+  background-color: #222;
+  -webkit-transition: background-color 300ms;
+  -moz-transition: background-color 300ms;
+  transition: background-color 300ms;
+  height: 50px;
+  width: 150px;
+  padding: 5px 15px;
+}
+button:active,
+button:hover {
+  background-color: #666;
+  color: #ebd800;
 }

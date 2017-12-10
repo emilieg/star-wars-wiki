@@ -2,6 +2,16 @@ h1 {
   font-family: 'Jockey One', sans-serif;
   font-size: 100px;
 }
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+h1, h2 {
+  text-shadow: 3px 3px #444;
+}
+p {
+  font-size: 1.5em;
+}
 .title-wrapper {
   background-image: url(http://res.cloudinary.com/dia36odnd/image/upload/v1485402169/space_ccpaml.jpg);
   color: #fff;
@@ -17,4 +27,13 @@ h1 {
   -ms-flex-align: center;
   align-items: center;
   padding: 5em;
+}
+
+@media screen and (max-width:750px){
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    letter-spacing: 5px;
+  }
 }
