@@ -4,6 +4,8 @@
   flex-direction: column;
   align-items: center;
   font-family: 'Roboto', sans-serif;
+  /*background-image: url('http://res.cloudinary.com/dia36odnd/image/upload/v1512937968/federico-beccari-67272_mmjszx.jpg');*/
+  background-color: #1f1f1f;
 }
 app-title-component {
   width: 100%;

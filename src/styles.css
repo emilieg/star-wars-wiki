@@ -14,8 +14,7 @@ body {
   font-family: 'Roboto', sans-serif;
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
-  /*this will mostly only work on Mac OS X*/
+  /*this will only work on Mac OS X*/
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto;
@@ -33,9 +32,22 @@ button {
   height: 50px;
   width: 150px;
   padding: 5px 15px;
+  border: 1px solid #fff;
 }
+
 button:active,
 button:hover {
   background-color: #666;
   color: #ebd800;
+  border: 1px solid #ebd800;
+}
+@media screen and (max-width:768px){
+  button {
+    width: 100px;
+  }
+  button:active,
+  button:hover {
+    background-color: #222;
+    color: #fff;
+  }
 }

@@ -4,6 +4,7 @@ h1 {
 p {
   margin: 0;
   font-size: 1.5em;
+  color: #fff;
 }
 a {
   color: inherit;
@@ -23,8 +24,9 @@ section {
   width: 25vw;
   height: 25vw;
   margin-bottom: 1em; 
-  background-color: #c95b60;
+  /*background-color: #c95b60;*/
   color: #fff;
+  border: 1px solid #fff;
 }
 .person-info {
   flex-direction: column;
@@ -39,11 +41,25 @@ section {
   justify-content: space-between;
   width: 85vw;
 }
+.paginator {
+  display: flex;
+  flex-direction: row;
+}
+.paginator.next {
+  justify-content: flex-end;
+}
+.paginator.prev {
+  justify-content: flex-start;
+}
 
 @media screen and (max-width:780px){
   section {
     width:100vw;
     justify-content: center;
+  }
+  p {
+    font-size: 1em;
+    text-align: center;
   }
   .info-container {
     min-width: 300px;

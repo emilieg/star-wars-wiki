@@ -16,7 +16,11 @@
         </div>
     </div>
 </section>
-<section>
-  <button *ngIf="next" (click)="getNextPage()">Next</button>
-  <button *ngIf="previous" (click)="getPreviousPage()">Previous</button>
+<section class="">
+  <div class="paginator prev">
+    <button *ngIf="previous" (click)="getPreviousPage()">Previous</button>
+  </div>
+  <div class="paginator next">
+    <button *ngIf="next" (click)="getNextPage()">Next</button>
+  </div>
 </section>

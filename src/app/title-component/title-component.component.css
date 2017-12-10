@@ -5,9 +5,10 @@ h1 {
 h2 {
   text-transform: uppercase;
   letter-spacing: 10px;
+  text-align: center;
 }
 h1, h2 {
-  text-shadow: 3px 3px #444;
+  text-shadow: 3px 3px rgba(34, 34, 34, .75);
 }
 p {
   font-size: 1.5em;
@@ -35,5 +36,8 @@ p {
   }
   h2 {
     letter-spacing: 5px;
+  }
+  .title-wrapper{
+    padding: 2em 2em 5em 2em;
   }
 }

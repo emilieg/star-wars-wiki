@@ -2,6 +2,12 @@ input {
   height: 50%;
   width: 50%;
   border: 1px solid #eee;
+  border-radius: 0;
   font-size: 1.5em;
   padding: .5em;
+}
+@media screen and (max-width: 768px){
+  input {
+    font-size: 1em;
+  }
 }

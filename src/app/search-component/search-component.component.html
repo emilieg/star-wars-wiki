@@ -1,7 +1,7 @@
   <input #searchTerm
   (keyup.enter)="search(searchTerm.value); searchTerm.value=''"
   type="text"
-  placeholder="Enter a name to search for a character.">
+  placeholder="Search for a character">
   
   <button (click)="search(searchTerm.value); searchTerm.value=''">Search</button>
 
