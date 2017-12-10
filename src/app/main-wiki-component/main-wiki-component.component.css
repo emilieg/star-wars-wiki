@@ -54,7 +54,7 @@ section p {
   justify-content: flex-start;
 }
 .error-message {
-  text-decoration: underline red;
+  text-decoration: underline #c95b60;
 }
 
 @media screen and (max-width:780px){

@@ -6,8 +6,17 @@ input {
   font-size: 1.5em;
   padding: .5em;
 }
-@media screen and (max-width: 768px){
+button {
+  margin: 0 1em;
+}
+@media screen and (max-width: 800px){
   input {
     font-size: 1em;
+    width: 90%;
+  }
+  button {
+    margin: 1em .5em;
+    width: 100px;
   }
 }
+

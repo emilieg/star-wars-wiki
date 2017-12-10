@@ -49,12 +49,12 @@ button:hover,
   padding: 1em;
 }
 @media screen and (max-width:768px){
-  button {
-    width: 100px;
-  }
   button:active,
-  button:hover {
+  button:hover,
+  .button:active,
+  .button:hover {
     background-color: #222;
     color: #fff;
+    border: 1px solid #fff;
   }
 }
