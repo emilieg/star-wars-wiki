@@ -6,6 +6,7 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 10px;
   text-align: center;
+  font-size: 1.75em;
 }
 h1, h2 {
   text-shadow: 3px 3px rgba(34, 34, 34, .75);
@@ -40,7 +41,6 @@ p {
   }
   .title-wrapper{
     padding: 2em 2em 5em 2em;
-
   }
 }
 /*turn off parallax for mobile devices*/

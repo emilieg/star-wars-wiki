@@ -29,16 +29,26 @@ section {
   border: 1px solid #fff;
 }
 .person-info {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   overflow-wrap: break-word;
 }
 section {
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 2em;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 85vw;
 }
 section p {
@@ -48,19 +58,26 @@ section p {
   margin-bottom: 3em;
 }
 .next {
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .prev {
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 .error-message {
-  text-decoration: underline #c95b60;
+  -webkit-text-decoration: underline #c95b60;
+          text-decoration: underline #c95b60;
 }
 
 @media screen and (max-width:780px){
   section {
     width:100vw;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   p {
     font-size: 1em;
@@ -72,6 +89,8 @@ section p {
     margin: .5em;
   }
   .paginator{
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
