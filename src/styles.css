@@ -19,7 +19,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto;
 }
-button {
+button, .button {
   font-size: 1em;
   text-transform: uppercase;
   border: none;
@@ -36,10 +36,17 @@ button {
 }
 
 button:active,
-button:hover {
+button:hover,
+.button:active,
+.button:hover {
   background-color: #666;
   color: #ebd800;
   border: 1px solid #ebd800;
+}
+
+.button {
+  text-align: center;
+  padding: 1em;
 }
 @media screen and (max-width:768px){
   button {

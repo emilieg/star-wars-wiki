@@ -13,6 +13,8 @@ export class SearchComponent implements OnInit {
     private wikiService:WikiService,
     private sharedService: SharedService) { }
 
+  public buttonName:String = 'Search';
+
   ngOnInit() {}
 
   public search(person:string){
@@ -25,7 +27,7 @@ export class SearchComponent implements OnInit {
 
   private receiveSearchResults(response){
     console.log("response is", response);
-  
+      if(response.count === 0 ){ this.buttonName = 'Reset'}
       this.sharedService.sendSearchResults(response)
   
   }

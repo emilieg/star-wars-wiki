@@ -54,6 +54,8 @@ export class MainWikiComponentComponent implements OnInit {
         
         this.people = response.results;
 
+        this.noResults = false;
+
         this.createLink(this.people);
 
         this.checkForNextPage(response);

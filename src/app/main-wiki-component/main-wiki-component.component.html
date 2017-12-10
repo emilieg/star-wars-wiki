@@ -1,9 +1,10 @@
+<section *ngIf="noResults">
+    <p class="error-message">Sorry, there were no results for that search.</p>
+</section>
 <section>
   <p>Use this wiki to search and learn more about characters from star wars.</p>
-  <button (click)="getAll()">Get all</button>
-  <p *ngIf="noResults">Sorry, there were no results for that search.</p>
+  <!-- <button (click)="getAll()">Reset</button> -->
 </section>
-
 <section>
     <div *ngFor="let person of people" class="info-container">
         <div class="person-info"> 
@@ -12,15 +13,15 @@
           <p><b>Mass:</b> {{person.mass}}</p>
           <p><b>Skin Color:</b> {{person.skin_color}}</p>
           <p><b>Hair Color:</b> {{person.hair_color}}</p>
-          <button><a href={{person.a}}>More</a></button>
+          <a href={{person.a}} class="button">More</a>
         </div>
     </div>
 </section>
-<section class="">
-  <div class="paginator prev">
+<section class="paginator">
+  <div class="prev">
     <button *ngIf="previous" (click)="getPreviousPage()">Previous</button>
   </div>
-  <div class="paginator next">
+  <div class="next">
     <button *ngIf="next" (click)="getNextPage()">Next</button>
   </div>
 </section>
